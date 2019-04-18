@@ -45,6 +45,9 @@ gem "responders"
 gem "rollbar"
 gem "seedbank"
 gem "stackprof"
+gem "nokogiri"
+gem 'ffi', '1.9.18'
+
 
 group :staging, :production do
   gem "newrelic_rpm"
@@ -52,9 +55,9 @@ end
 
 group :test do
   gem "capybara"
+  gem "capybara-email"
   gem "codeclimate-test-reporter", require: false
   gem "database_cleaner"
-  gem "email_spec"
   gem "formulaic"
   gem "guard-rspec"
   gem "launchy"
